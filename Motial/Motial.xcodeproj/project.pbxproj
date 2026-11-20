@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		5A1000000000000000000001 /* SteadyAnkle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SteadyAnkle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A1000000000000000000001 /* Motial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Motial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A1000000000000000000010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		5A1000000000000000000002 /* SteadyAnkle */ = {
+		5A1000000000000000000002 /* Motial */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SteadyAnkle;
+			path = Motial;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -33,7 +33,7 @@
 		5A1000000000000000000004 = {
 			isa = PBXGroup;
 			children = (
-				5A1000000000000000000002 /* SteadyAnkle */,
+				5A1000000000000000000002 /* Motial */,
 				5A1000000000000000000010 /* Info.plist */,
 				5A1000000000000000000005 /* Products */,
 			);
@@ -42,7 +42,7 @@
 		5A1000000000000000000005 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5A1000000000000000000001 /* SteadyAnkle.app */,
+				5A1000000000000000000001 /* Motial.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -50,9 +50,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5A1000000000000000000006 /* SteadyAnkle */ = {
+		5A1000000000000000000006 /* Motial */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5A100000000000000000000A /* Build configuration list for PBXNativeTarget "SteadyAnkle" */;
+			buildConfigurationList = 5A100000000000000000000A /* Build configuration list for PBXNativeTarget "Motial" */;
 			buildPhases = (
 				5A1000000000000000000007 /* Sources */,
 				5A1000000000000000000003 /* Frameworks */,
@@ -63,13 +63,13 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				5A1000000000000000000002 /* SteadyAnkle */,
+				5A1000000000000000000002 /* Motial */,
 			);
-			name = SteadyAnkle;
+			name = Motial;
 			packageProductDependencies = (
 			);
-			productName = SteadyAnkle;
-			productReference = 5A1000000000000000000001 /* SteadyAnkle.app */;
+			productName = Motial;
+			productReference = 5A1000000000000000000001 /* Motial.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -87,7 +87,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5A100000000000000000000B /* Build configuration list for PBXProject "SteadyAnkle" */;
+			buildConfigurationList = 5A100000000000000000000B /* Build configuration list for PBXProject "Motial" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -101,7 +101,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5A1000000000000000000006 /* SteadyAnkle */,
+				5A1000000000000000000006 /* Motial */,
 			);
 		};
 /* End PBXProject section */
@@ -208,7 +208,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = sg.edu.nus.did.SteadyAnkle;
+				PRODUCT_BUNDLE_IDENTIFIER = sg.edu.nus.did.Motial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -238,7 +238,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = sg.edu.nus.did.SteadyAnkle;
+				PRODUCT_BUNDLE_IDENTIFIER = sg.edu.nus.did.Motial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -251,7 +251,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5A100000000000000000000A /* Build configuration list for PBXNativeTarget "SteadyAnkle" */ = {
+		5A100000000000000000000A /* Build configuration list for PBXNativeTarget "Motial" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5A100000000000000000000E /* Debug */,
@@ -260,7 +260,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5A100000000000000000000B /* Build configuration list for PBXProject "SteadyAnkle" */ = {
+		5A100000000000000000000B /* Build configuration list for PBXProject "Motial" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5A100000000000000000000C /* Debug */,

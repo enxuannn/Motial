@@ -34,21 +34,21 @@ A sprain heals, but the ankle often doesn't. About 40% of people develop chronic
 ## Run it
 
 1. A Mac with Apple silicon and **Xcode 16 or newer** (the project targets visionOS 2.0 and also builds with Xcode 26).
-2. Open `SteadyAnkle/SteadyAnkle.xcodeproj` (the folder and target keep the original working name; the app's display name is **Motial**).
-3. Select the **SteadyAnkle** target → *Signing & Capabilities* → choose your team (change the bundle ID if needed).
+2. Open `Motial/Motial.xcodeproj`.
+3. Select the **Motial** target → *Signing & Capabilities* → choose your team (change the bundle ID if needed).
 4. Run on **Apple Vision Pro** (recommended: hand tracking, games and Lumi need the device) or the **Apple Vision Pro simulator** (UI, coach, anatomy and scenes).
-5. iPhone companion: open `SteadyAnkle/Companion/SteadyShin/SteadyShin.xcodeproj` ("Motial Pedal", iOS 17) and run it on an iPhone on the same Wi-Fi.
+5. iPhone companion: open `Motial/Companion/SteadyShin/SteadyShin.xcodeproj` ("Motial Pedal", iOS 17) and run it on an iPhone on the same Wi-Fi.
 
 ### Note on stock video
 
-Third-party stock sports clips (`Resources/Videos/video_*.mp4`, from Mixkit) are **not included** in this public repository because their licence does not allow redistribution. The app still builds and runs; the Play Smart sport videos simply won't play. To restore them, add your own clips with the same file names to `SteadyAnkle/SteadyAnkle/Resources/Videos/`. The 180° court clips (`court180_*.mp4`) are original Blender renders and are included.
+Third-party stock sports clips (`Resources/Videos/video_*.mp4`, from Mixkit) are **not included** in this public repository because their licence does not allow redistribution. The app still builds and runs; the Play Smart sport videos simply won't play. To restore them, add your own clips with the same file names to `Motial/Motial/Resources/Videos/`. The 180° court clips (`court180_*.mp4`) are original Blender renders and are included.
 
 ## Project layout
 
 ```
-SteadyAnkle/
-  SteadyAnkle.xcodeproj         visionOS app (display name: Motial)
-  SteadyAnkle/
+Motial/
+  Motial.xcodeproj              visionOS app
+  Motial/
     SteadyApp.swift             app entry: main window, anatomy volume, immersive spaces
     Model/                      clinical engine (stages, plan, adaptation, hop gating), exercise & sport libraries
     Views/                      onboarding, Today, Play, Sport Lab, settings, brand system

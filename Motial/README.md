@@ -10,19 +10,19 @@ A medium-fidelity visionOS prototype that delivers guideline-based ankle sprain 
 ## Open and run
 
 1. You need a Mac with Apple Silicon and **Xcode 16 or newer** (visionOS 2 SDK). The project targets visionOS 2.0, so it also builds with Xcode 26.
-2. Double-click `SteadyAnkle.xcodeproj`.
-3. Select the **SteadyAnkle** target, open *Signing & Capabilities* and choose your team. Change the bundle ID if needed (default `sg.edu.nus.did.SteadyAnkle`).
+2. Double-click `Motial.xcodeproj`.
+3. Select the **Motial** target, open *Signing & Capabilities* and choose your team. Change the bundle ID if needed (default `sg.edu.nus.did.Motial`).
 4. Pick a run destination:
    - **Apple Vision Pro** (recommended). Head and hand tracking, balance scoring and the games need the real device.
    - **Apple Vision Pro simulator**. Fine for the UI, coach, anatomy and environments. There's no hand tracking, so in Catch you look at a ball and pinch instead.
 5. Press **Run** (⌘R).
 
-The project uses Xcode's *folder-synchronised groups*, so any file you drop into `SteadyAnkle/` is added to the app automatically. If you see build errors, see **Troubleshooting** below.
+The project uses Xcode's *folder-synchronised groups*, so any file you drop into `Motial/` is added to the app automatically. If you see build errors, see **Troubleshooting** below.
 
 ## What's inside
 
 ```
-SteadyAnkle/
+Motial/
   SteadyApp.swift              App entry: main window, 3D anatomy volume, immersive training space
   Model/                       Clinical engine (triage, stages, plan, adaptation), exercise & evidence library, persistence
   Views/                       Onboarding (5 short screens), Today, Exercise detail, Learn, 3D Anatomy, Progress, Settings

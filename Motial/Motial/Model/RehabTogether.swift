@@ -5,7 +5,7 @@ import GroupActivities
 /// On Vision Pro each person appears as a spatial Persona; Steady keeps everyone on the same exercise and shows
 /// the person's live reps, hold time and pain check, so a clinician can coach remotely.
 struct RehabTogetherActivity: GroupActivity {
-    static let activityIdentifier = "sg.edu.nus.did.SteadyAnkle.rehab-together"
+    static let activityIdentifier = "sg.edu.nus.did.Motial.rehab-together"
     var metadata: GroupActivityMetadata {
         var m = GroupActivityMetadata()
         m.title = "Rehab Together"

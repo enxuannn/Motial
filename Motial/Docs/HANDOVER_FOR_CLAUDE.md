@@ -1,6 +1,6 @@
 # Remer: full project handover (for a new Claude session)
 
-**Read this first, then `SteadyAnkle/README.md` and `SteadyAnkle/Docs/Steady_Clinical_Evidence_and_Design_Report.pdf`.**
+**Read this first, then `Motial/README.md` and `Motial/Docs/Steady_Clinical_Evidence_and_Design_Report.pdf`.**
 Owner: Xuan (En Xuan), NUS Industrial Design, DID platform "Spatial Computing and AI". Presentation: **29 Oct 2026**, possibly to the Head of Apple. The target is Apple-quality polish.
 
 ---
@@ -8,8 +8,8 @@ Owner: Xuan (En Xuan), NUS Industrial Design, DID platform "Spatial Computing an
 ## 1. What the app is
 **Remer** is a visionOS (Apple Vision Pro) app for **ankle-sprain rehabilitation**, following clinical guidelines (JOSPT CPG 2021, PEACE & LOVE, MGH protocol, PAASS 2021, International Ankle Consortium). It comes with an iPhone companion app, **Remer Pedal**.
 
-- Xcode project: `SteadyAnkle/SteadyAnkle.xcodeproj` (the folder and target are still named SteadyAnkle; the display name is **Remer**). Bundle ID `sg.edu.nus.did.SteadyAnkle`. Target visionOS 2. Swift 5, minimal strict concurrency. It uses **folder-synchronised groups**, so any file dropped into `SteadyAnkle/SteadyAnkle/` is added to the app automatically.
-- Companion: `SteadyAnkle/Companion/SteadyShin/SteadyShin.xcodeproj` (display name "Remer Pedal", bundle `sg.edu.nus.did.SteadyAnkle.Shin`, iOS 17).
+- Xcode project: `Motial/Motial.xcodeproj` (the folder and target are still named Motial; the display name is **Remer**). Bundle ID `sg.edu.nus.did.Motial`. Target visionOS 2. Swift 5, minimal strict concurrency. It uses **folder-synchronised groups**, so any file dropped into `Motial/Motial/` is added to the app automatically.
+- Companion: `Motial/Companion/SteadyShin/SteadyShin.xcodeproj` (display name "Remer Pedal", bundle `sg.edu.nus.did.Motial.Shin`, iOS 17).
 - Built and tested in Xcode 26.3 with the Apple Vision Pro simulator (visionOS 26.2).
 
 ## 2. Non-negotiable rules from the owner (follow these)
@@ -27,7 +27,7 @@ Owner: Xuan (En Xuan), NUS Industrial Design, DID platform "Spatial Computing an
 12. The owner wants to **choose** things themselves when the options really differ (for example tabletop drive vs cockpit drive). Ask before making large irreversible changes.
 
 ## 3. Feature map (where the code is)
-`SteadyAnkle/SteadyAnkle/`
+`Motial/Motial/`
 - `SteadyApp.swift`: scenes: main window, anatomy volume, ImmersiveSpaces `session`, `video`, `sportlab`, `courtguide` (Play Smart, progressive immersion) and `welcome`. The session immersion style starts as `.mixed` (room).
 - `Model/`
   - `ClinicalEngine.swift`: triage, 4 stages (Protect & Move → Load & Restore → Balance & Strength → Return to Activity), plan, adaptation, hop gating.
@@ -140,7 +140,7 @@ Owner feedback and what was done:
 - **Sprain mechanism shown:** inversion plus plantarflexion loads the ATFL first, then the CFL.
 
 ## 8. Folder contents of this zip
-- `SteadyAnkle/`: the complete Xcode project (app, companion, Docs, Tools). **This is all you need to build.**
+- `Motial/`: the complete Xcode project (app, companion, Docs, Tools). **This is all you need to build.**
 - `ClaudePipeline/`: scripts used to make the voice, sound effects and 180° renders.
 - `Extras/`:
   - stereo SBS 180° clips
