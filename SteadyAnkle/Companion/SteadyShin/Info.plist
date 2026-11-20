@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSMotionUsageDescription</key>
+	<string>Motial Pedal reads the tilt of your phone, strapped to the top of your foot, to measure how far you point your toes. Movement is sent live to Motial on your Vision Pro and never stored.</string>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>Motial Pedal connects to Motial on your Vision Pro over your local network to drive the games with your ankle.</string>
+	<key>NSBonjourServices</key>
+	<array>
+		<string>_steadyshin._tcp</string>
+	</array>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+</dict>
+</plist>

@@ -1,0 +1,13 @@
+{
+ "images": [
+  {
+   "filename": "cover_knee_to_wall.jpg",
+   "idiom": "universal",
+   "scale": "2x"
+  }
+ ],
+ "info": {
+  "author": "xcode",
+  "version": 1
+ }
+}

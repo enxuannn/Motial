@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDisplayName</key>
+	<string>Motial</string>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationPreferredDefaultSceneSessionRole</key>
+		<string>UIWindowSceneSessionRoleApplication</string>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<true/>
+		<key>UISceneConfigurations</key>
+		<dict/>
+	</dict>
+	<key>NSHandsTrackingUsageDescription</key>
+	<string>Motial uses hand tracking so Lumi can land on your hand, you can catch balls during one-leg balance training, and you can steer in the drive. Hand positions are processed live on your Vision Pro and are never stored or shared.</string>
+	<key>NSWorldSensingUsageDescription</key>
+	<string>Motial scans your room before standing exercises to check for walls, tables and seats you could trip over, and uses your head position to measure balance, count repetitions and detect hops. Everything stays on your Vision Pro.</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>Motial can save your rehab sessions to Apple Health as workouts, if you switch this on in Settings.</string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>Motial does not read your health data. This permission is only used to confirm that workouts can be saved.</string>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>Motial connects to the Motial Pedal app on your iPhone over your local network, so your ankle can drive the games while you sit.</string>
+	<key>NSBonjourServices</key>
+	<array>
+		<string>_steadyshin._tcp</string>
+	</array>
+	<key>NSSupportsGroupActivities</key>
+	<true/>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.healthcare-fitness</string>
+</dict>
+</plist>

@@ -1,0 +1,389 @@
+{
+ "fps": 30,
+ "clips": [
+  {
+   "id": "idle_R",
+   "exercise": "idle",
+   "side": "R",
+   "phase": "all",
+   "seated": false,
+   "start": 0.0,
+   "end": 4.0
+  },
+  {
+   "id": "seated_idle_R",
+   "exercise": "seated_idle",
+   "side": "R",
+   "phase": "all",
+   "seated": true,
+   "start": 4.0333,
+   "end": 8.0333
+  },
+  {
+   "id": "ankle_pumps_R",
+   "exercise": "ankle_pumps",
+   "side": "R",
+   "phase": "protect",
+   "seated": true,
+   "start": 8.0667,
+   "end": 12.0667
+  },
+  {
+   "id": "ankle_alphabet_R",
+   "exercise": "ankle_alphabet",
+   "side": "R",
+   "phase": "protect",
+   "seated": true,
+   "start": 12.1,
+   "end": 18.1
+  },
+  {
+   "id": "seated_eversion_R",
+   "exercise": "seated_eversion",
+   "side": "R",
+   "phase": "load",
+   "seated": true,
+   "start": 18.1333,
+   "end": 22.6333
+  },
+  {
+   "id": "calf_raise_R",
+   "exercise": "calf_raise",
+   "side": "R",
+   "phase": "load",
+   "seated": false,
+   "start": 22.6667,
+   "end": 26.8667
+  },
+  {
+   "id": "knee_to_wall_R",
+   "exercise": "knee_to_wall",
+   "side": "R",
+   "phase": "load",
+   "seated": false,
+   "start": 26.9,
+   "end": 31.4
+  },
+  {
+   "id": "single_leg_stance_R",
+   "exercise": "single_leg_stance",
+   "side": "R",
+   "phase": "balance",
+   "seated": false,
+   "start": 31.4333,
+   "end": 37.4333
+  },
+  {
+   "id": "sls_reach_catch_R",
+   "exercise": "sls_reach_catch",
+   "side": "R",
+   "phase": "balance",
+   "seated": false,
+   "start": 37.4667,
+   "end": 43.4667
+  },
+  {
+   "id": "sls_head_turns_R",
+   "exercise": "sls_head_turns",
+   "side": "R",
+   "phase": "balance",
+   "seated": false,
+   "start": 43.5,
+   "end": 48.3
+  },
+  {
+   "id": "sl_mini_squat_R",
+   "exercise": "sl_mini_squat",
+   "side": "R",
+   "phase": "balance",
+   "seated": false,
+   "start": 48.3333,
+   "end": 52.9333
+  },
+  {
+   "id": "sl_calf_raise_R",
+   "exercise": "sl_calf_raise",
+   "side": "R",
+   "phase": "return",
+   "seated": false,
+   "start": 52.9667,
+   "end": 57.1667
+  },
+  {
+   "id": "hop_forward_R",
+   "exercise": "hop_forward",
+   "side": "R",
+   "phase": "return",
+   "seated": false,
+   "start": 57.2,
+   "end": 61.6
+  },
+  {
+   "id": "side_hop_R",
+   "exercise": "side_hop",
+   "side": "R",
+   "phase": "return",
+   "seated": false,
+   "start": 61.6333,
+   "end": 65.6333
+  },
+  {
+   "id": "step_beat_R",
+   "exercise": "step_beat",
+   "side": "R",
+   "phase": "return",
+   "seated": false,
+   "start": 65.6667,
+   "end": 70.4667
+  },
+  {
+   "id": "idle_L",
+   "exercise": "idle",
+   "side": "L",
+   "phase": "all",
+   "seated": false,
+   "start": 70.5,
+   "end": 74.5
+  },
+  {
+   "id": "seated_idle_L",
+   "exercise": "seated_idle",
+   "side": "L",
+   "phase": "all",
+   "seated": true,
+   "start": 74.5333,
+   "end": 78.5333
+  },
+  {
+   "id": "ankle_pumps_L",
+   "exercise": "ankle_pumps",
+   "side": "L",
+   "phase": "protect",
+   "seated": true,
+   "start": 78.5667,
+   "end": 82.5667
+  },
+  {
+   "id": "ankle_alphabet_L",
+   "exercise": "ankle_alphabet",
+   "side": "L",
+   "phase": "protect",
+   "seated": true,
+   "start": 82.6,
+   "end": 88.6
+  },
+  {
+   "id": "seated_eversion_L",
+   "exercise": "seated_eversion",
+   "side": "L",
+   "phase": "load",
+   "seated": true,
+   "start": 88.6333,
+   "end": 93.1333
+  },
+  {
+   "id": "calf_raise_L",
+   "exercise": "calf_raise",
+   "side": "L",
+   "phase": "load",
+   "seated": false,
+   "start": 93.1667,
+   "end": 97.3667
+  },
+  {
+   "id": "knee_to_wall_L",
+   "exercise": "knee_to_wall",
+   "side": "L",
+   "phase": "load",
+   "seated": false,
+   "start": 97.4,
+   "end": 101.9
+  },
+  {
+   "id": "single_leg_stance_L",
+   "exercise": "single_leg_stance",
+   "side": "L",
+   "phase": "balance",
+   "seated": false,
+   "start": 101.9333,
+   "end": 107.9333
+  },
+  {
+   "id": "sls_reach_catch_L",
+   "exercise": "sls_reach_catch",
+   "side": "L",
+   "phase": "balance",
+   "seated": false,
+   "start": 107.9667,
+   "end": 113.9667
+  },
+  {
+   "id": "sls_head_turns_L",
+   "exercise": "sls_head_turns",
+   "side": "L",
+   "phase": "balance",
+   "seated": false,
+   "start": 114.0,
+   "end": 118.8
+  },
+  {
+   "id": "sl_mini_squat_L",
+   "exercise": "sl_mini_squat",
+   "side": "L",
+   "phase": "balance",
+   "seated": false,
+   "start": 118.8333,
+   "end": 123.4333
+  },
+  {
+   "id": "sl_calf_raise_L",
+   "exercise": "sl_calf_raise",
+   "side": "L",
+   "phase": "return",
+   "seated": false,
+   "start": 123.4667,
+   "end": 127.6667
+  },
+  {
+   "id": "hop_forward_L",
+   "exercise": "hop_forward",
+   "side": "L",
+   "phase": "return",
+   "seated": false,
+   "start": 127.7,
+   "end": 132.1
+  },
+  {
+   "id": "side_hop_L",
+   "exercise": "side_hop",
+   "side": "L",
+   "phase": "return",
+   "seated": false,
+   "start": 132.1333,
+   "end": 136.1333
+  },
+  {
+   "id": "step_beat_L",
+   "exercise": "step_beat",
+   "side": "L",
+   "phase": "return",
+   "seated": false,
+   "start": 136.1667,
+   "end": 140.9667
+  },
+  {
+   "id": "talk_R",
+   "exercise": "talk",
+   "side": "R",
+   "phase": "all",
+   "seated": false,
+   "start": 142.0,
+   "end": 148.0
+  },
+  {
+   "id": "talk_L",
+   "exercise": "talk",
+   "side": "L",
+   "phase": "all",
+   "seated": false,
+   "start": 142.0,
+   "end": 148.0
+  },
+  {
+   "id": "seated_talk_R",
+   "exercise": "seated_talk",
+   "side": "R",
+   "phase": "all",
+   "seated": true,
+   "start": 149.0,
+   "end": 155.0
+  },
+  {
+   "id": "seated_talk_L",
+   "exercise": "seated_talk",
+   "side": "L",
+   "phase": "all",
+   "seated": true,
+   "start": 149.0,
+   "end": 155.0
+  },
+  {
+   "id": "set_shot_R",
+   "exercise": "set_shot",
+   "side": "R",
+   "phase": "all",
+   "seated": false,
+   "start": 156.0,
+   "end": 158.6
+  },
+  {
+   "id": "set_shot_L",
+   "exercise": "set_shot",
+   "side": "L",
+   "phase": "all",
+   "seated": false,
+   "start": 156.0,
+   "end": 158.6
+  },
+  {
+   "id": "seated_inversion_R",
+   "exercise": "seated_inversion",
+   "side": "R",
+   "phase": "load",
+   "seated": true,
+   "start": 159.6,
+   "end": 164.1
+  },
+  {
+   "id": "seated_inversion_L",
+   "exercise": "seated_inversion",
+   "side": "L",
+   "phase": "load",
+   "seated": true,
+   "start": 165.1,
+   "end": 169.6
+  }
+ ],
+ "stool": {
+  "seatHeight": 0.46,
+  "z": -0.1051,
+  "radius": 0.19
+ },
+ "height": 1.78,
+ "map": {
+  "Hips": "pelvis_01",
+  "Spine": "spine1_08",
+  "Chest": "spine3_010",
+  "Neck": "neck_011",
+  "Head": "head_012",
+  "Thigh_R": "right_hip_05",
+  "Shin_R": "right_knee_06",
+  "Foot_R": "right_ankle_07",
+  "Toe_R": null,
+  "UpperArm_R": "right_shoulder_018",
+  "ForeArm_R": "right_elbow_019",
+  "Hand_R": "right_wrist_020",
+  "Thigh_L": "left_hip_02",
+  "Shin_L": "left_knee_03",
+  "Foot_L": "left_ankle_04",
+  "Toe_L": null,
+  "UpperArm_L": "left_shoulder_014",
+  "ForeArm_L": "left_elbow_015",
+  "Hand_L": "left_wrist_016"
+ },
+ "source": "Coach model: see Credits. Leg bones: BodyParts3D (c) DBCLS CC BY-SA 2.1 JP. Motion: original",
+ "shot": {
+  "hold": [
+   -0.021,
+   1.137,
+   0.246
+  ],
+  "release": [
+   -0.179,
+   2.077,
+   0.352
+  ],
+  "releaseTime": 1.0,
+  "length": 2.5999999999999943
+ }
+}
