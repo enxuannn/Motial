@@ -6,7 +6,7 @@ Teoh En Xuan · Spatial Computing and AI · NUS Industrial Design · 2026
 
 ![Motial on Apple Vision Pro](media/pictures/03_life_size_coach.jpg)
 
-▶️ **[Watch the 65-second pitch video](media/Motial_Pitch_Video.mp4)** · Full app demo: [youtu.be/f3jrQV0mBeA](https://youtu.be/f3jrQV0mBeA)
+▶️ **[Watch the 65-second pitch video](media/Motial_Pitch_Video.mp4)** · 🎥 **[Presentation video, recorded on Apple Vision Pro](media/Motial_Presentation_Video.mp4)** · Full app demo: [youtu.be/f3jrQV0mBeA](https://youtu.be/f3jrQV0mBeA)
 
 ---
 
