@@ -1,6 +1,6 @@
 """Builds Coach.usdz: CT-derived human (BodyParts3D skin), clothed, skinned and animated with
 clinically-based ankle-rehab exercises for a right- and left-injured ankle. Writes coach_clips.json."""
-import sys; sys.path.insert(0, '/home/claude/build')
+import sys; sys.path.insert(0, 'build')
 from common import *
 from mathutils import Quaternion
 import math

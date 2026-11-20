@@ -12,7 +12,7 @@ pdfmetrics.registerFont(TTFont('DV', F+'DejaVuSans.ttf')); pdfmetrics.registerFo
 pdfmetrics.registerFont(TTFont('DV-I', F+'DejaVuSans-Oblique.ttf')); pdfmetrics.registerFont(TTFont('DV-BI', F+'DejaVuSans-BoldOblique.ttf'))
 addMapping('DV',0,0,'DV'); addMapping('DV',1,0,'DV-B'); addMapping('DV',0,1,'DV-I'); addMapping('DV',1,1,'DV-BI')
 
-OUT = '/home/claude/build/out/'
+OUT = 'build/out/'
 doc = SimpleDocTemplate(OUT + 'Steady_Clinical_Evidence_and_Design_Report.pdf', pagesize=A4,
                         leftMargin=18 * mm, rightMargin=18 * mm, topMargin=16 * mm, bottomMargin=16 * mm,
                         title='Steady - Clinical Evidence & Design Report', author='Spatial Computing & AI platform team')

@@ -1,6 +1,6 @@
 """Retargets the clinical exercise motion library onto any humanoid rig (e.g. a Sketchfab photoreal/scan model)
 and exports Coach.usdz + coach_clips.json. Usage: python3 retarget_coach.py <model.glb|fbx> [height_m]"""
-import sys; sys.path.insert(0, '/home/claude/build')
+import sys; sys.path.insert(0, 'build')
 from common import *
 from mathutils import Quaternion
 import math, re
@@ -232,7 +232,7 @@ for sd in 'RL':
         o.parent = arm; m = o.modifiers.new('Armature', 'ARMATURE'); m.object = arm
 
 # ---------- motion library (shared with build_coach.py) ----------
-src = open('/home/claude/build/build_coach.py').read()
+src = open('build/build_coach.py').read()
 lib = src[src.index('def RX(d)'):src.index('rig.animation_data_create()')]
 ns = dict(globals())
 ns.update({'J': J, 'side': side, 'REST': REST})

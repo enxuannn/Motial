@@ -1,10 +1,10 @@
 import bpy, sys
 from mathutils import Matrix
-sys.path.insert(0,'/home/claude/build')
+sys.path.insert(0,'build')
 from common import OUT, select_only
-bpy.ops.wm.open_mainfile(filepath='/home/claude/build/models/baseball/glove2.blend')
+bpy.ops.wm.open_mainfile(filepath='build/models/baseball/glove2.blend')
 ob=bpy.data.objects['GloveMesh']
-img=bpy.data.images.load('/home/claude/build/models/baseball/glove_base_clean.png'); img.pack()
+img=bpy.data.images.load('build/models/baseball/glove_base_clean.png'); img.pack()
 mat=bpy.data.materials.new('GloveLeather'); mat.use_nodes=True
 nt=mat.node_tree; bsdf=nt.nodes['Principled BSDF']
 tex=nt.nodes.new('ShaderNodeTexImage'); tex.image=img

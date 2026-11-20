@@ -2,7 +2,7 @@
 u = azimuth (0..1, 0.5 = straight ahead), v = elevation (top = +90deg)."""
 import numpy as np
 from PIL import Image, ImageFilter
-OUT = '/home/claude/build/out/'
+OUT = 'build/out/'
 W, H = 4096, 2048
 rng = np.random.default_rng(7)
 az = (np.arange(W) + 0.5) / W * 2 * np.pi                 # 0..2pi

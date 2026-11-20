@@ -32,7 +32,7 @@ struct Clip180: Equatable {
     let video: String
     let line: String
     /// Frames (24 fps) of this scene inside Court3D.usdz, the live 3D version: real stereo depth and walk-around
-    /// parallax, played on Sunset Court. Built by ClaudePipeline/bake_court3d.py. nil = video only.
+    /// parallax, played on Sunset Court. Built by Tools/AssetPipeline/bake_court3d.py. nil = video only.
     var frames: ClosedRange<Int>? = nil
 }
 

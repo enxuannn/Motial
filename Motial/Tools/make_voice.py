@@ -81,14 +81,14 @@ json.dump({key(s): s for s in corpus}, open(OUT + '/voice_index.json', 'w'), ind
 if '--render' in sys.argv:
     from kokoro_onnx import Kokoro
     import soundfile as sf
-    k = Kokoro('/home/claude/tts/kokoro-v1.0.onnx', '/home/claude/tts/voices-v1.0.bin')
+    k = Kokoro('tts/kokoro-v1.0.onnx', 'tts/voices-v1.0.bin')
     for i, s in enumerate(corpus):
         name = f'{OUT}/vo_{key(s)}.m4a'
         if os.path.exists(name): continue
         spoken = s.replace('×', ' by ').replace('NurseFirst', 'Nurse First').replace('6262 6262', '6 2 6 2, 6 2 6 2').replace('995', '9 9 5')
         a, sr = k.create(spoken, voice='af_heart', speed=0.95, lang='en-us')
-        sf.write('/tmp/claude-0/vo.wav', a, sr)
-        subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-i', '/tmp/claude-0/vo.wav', '-af', 'afade=t=in:d=0.02,areverse,silenceremove=start_periods=1:start_threshold=-50dB,areverse',
+        sf.write('build/tmp/vo.wav', a, sr)
+        subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-i', 'build/tmp/vo.wav', '-af', 'afade=t=in:d=0.02,areverse,silenceremove=start_periods=1:start_threshold=-50dB,areverse',
                         '-ac', '1', '-c:a', 'aac', '-b:a', '64k', name], check=True)
         if i % 50 == 0: print(i, s[:60], flush=True)
     print('done')

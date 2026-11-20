@@ -4,13 +4,13 @@ so the app can play them life-size on Sunset Court with real stereo depth and wa
 Timeline (24 fps):  sprain = frames 0 .. 158   ·   safe = frames 170 .. 290   (see COURT3D_* in CourtGuideView.swift)
 X-ray fade, bone glow and ligament glow are NOT baked: the app drives them from the same timing as vr180.plan().
 
-Usage (inputs in /tmp/claude-0/vr, same as vr180.py):  python3 bake_court3d.py -- sprain bake
-Output: /tmp/claude-0/vr/Court3D.usdz
+Usage (inputs in build/tmp/vr, same as vr180.py):  python3 bake_court3d.py -- sprain bake
+Output: build/tmp/vr/Court3D.usdz
 """
 import bpy, sys, math
 from mathutils import Vector, Matrix
 
-VR = '/tmp/claude-0/vr'
+VR = 'build/tmp/vr'
 src = open(f'{VR}/vr180.py').read().split("if mode=='preview'")[0]
 sys.argv = ['x', '--', 'sprain', 'bake']
 g = {'__name__': 'bake'}

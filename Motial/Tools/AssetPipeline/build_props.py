@@ -1,5 +1,5 @@
 """Game props: river stepping stones and a lotus (original models)."""
-import sys; sys.path.insert(0, '/home/claude/build')
+import sys; sys.path.insert(0, 'build')
 from common import *
 import random
 reset()

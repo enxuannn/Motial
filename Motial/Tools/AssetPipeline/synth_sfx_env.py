@@ -1,5 +1,5 @@
 """Environment-themed hit sounds + baseball sounds (original, synthesised)."""
-src = open('/home/claude/build/synth_audio.py').read().split('# ---------------- SFX')[0]
+src = open('build/synth_audio.py').read().split('# ---------------- SFX')[0]
 exec(src)
 import numpy as np
 # Dawn Lake: glassy water chime (two bell partials + tiny drop)

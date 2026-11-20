@@ -1,6 +1,6 @@
 import bpy, sys, math
 from mathutils import Vector, Matrix
-sys.path.insert(0,'/home/claude/build')
+sys.path.insert(0,'build')
 from common import OUT, select_only
 def load(path):
     bpy.ops.wm.read_factory_settings(use_empty=True)
@@ -39,14 +39,14 @@ else:
     m=ob.modifiers.new('d','DECIMATE'); m.ratio=16000/len(ob.data.polygons)
     bpy.ops.object.modifier_apply(modifier='d')
     print('tris',len(ob.data.polygons))
-    bpy.ops.wm.save_as_mainfile(filepath='/home/claude/build/models/baseball/glove_dec.blend')
+    bpy.ops.wm.save_as_mainfile(filepath='build/models/baseball/glove_dec.blend')
 
 if which in ('glove2','glove3'):
     ob,size=load('/mnt/user-data/uploads/Downloads/steady_'+which+'.glb')
     s=0.29/max(size); ob.data.transform(Matrix.Scale(s,4))
     for im in bpy.data.images: im.scale(1024,1024); im.pack()
     ob.name='GloveMesh'; ob.data.name='GloveMesh'
-    bpy.ops.wm.save_as_mainfile(filepath='/home/claude/build/models/baseball/'+which+'.blend')
+    bpy.ops.wm.save_as_mainfile(filepath='build/models/baseball/'+which+'.blend')
     # previews from 6 axes
     sc=bpy.context.scene; sc.render.engine='CYCLES'; sc.cycles.samples=16; sc.render.resolution_x=sc.render.resolution_y=360
     w=bpy.data.worlds.new('w'); sc.world=w; w.color=(0.8,0.8,0.8)
@@ -57,5 +57,5 @@ if which in ('glove2','glove3'):
         v=Vector(d); cam.location=v*1.0
         cam.rotation_euler=(-v).to_track_quat('-Z','Y' if abs(v.z)<0.9 else 'X').to_euler()
         sun.rotation_euler=cam.rotation_euler
-        sc.render.filepath=f'/home/claude/build/models/baseball/{which}_view_{name}.png'; bpy.ops.render.render(write_still=True)
+        sc.render.filepath=f'build/models/baseball/{which}_view_{name}.png'; bpy.ops.render.render(write_still=True)
     print('GLOVE2 ok',[round(x*s,3) for x in size])

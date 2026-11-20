@@ -356,7 +356,7 @@ final class CourtGuideScene {
     }
 
     /// Fades in the x-ray view and the ligament glow on the same schedule as the rendered 180° clips
-    /// (ClaudePipeline/vr180.py, plan()), following the clip's own loop.
+    /// (Tools/AssetPipeline/vr180.py, plan()), following the clip's own loop.
     private func updateLive(dt: Float) {
         guard let c = liveClip, let fr = c.frames else { return }
         liveT += dt

@@ -3,7 +3,7 @@ in the brand moodboard (dawn lake & orbs, sunlit leaves, sky lanterns, river sto
 No people (no coach in menus). The app draws the SF Symbol and text on top."""
 import numpy as np, math, sys, os
 from PIL import Image, ImageDraw, ImageFilter, ImageEnhance, ImageFont
-ART = '/home/claude/handover/Steady_Handover/Motial/Motial/Assets.xcassets/'
+ART = '../../Motial/Assets.xcassets/'
 OUT = sys.argv[1]; os.makedirs(OUT, exist_ok=True)
 W, H = 1200, 520
 rng = np.random.default_rng(3)

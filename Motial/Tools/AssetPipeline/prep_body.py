@@ -1,5 +1,5 @@
 """Decimate the BodyParts3D skin once and cache it as body.blend."""
-import sys; sys.path.insert(0, '/home/claude/build')
+import sys; sys.path.insert(0, 'build')
 from common import *
 reset()
 b = import_stl('FMA7163', 'Body')

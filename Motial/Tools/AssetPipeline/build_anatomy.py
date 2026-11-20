@@ -1,5 +1,5 @@
 """Builds AnkleAnatomy.usdz (right foot & ankle, BodyParts3D) + anatomy_landmarks.json."""
-import sys; sys.path.insert(0, '/home/claude/build')
+import sys; sys.path.insert(0, 'build')
 from common import *
 
 reset()

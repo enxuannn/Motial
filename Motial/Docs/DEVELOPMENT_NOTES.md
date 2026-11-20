@@ -1,4 +1,4 @@
-# Remer: full project handover (for a new Claude session)
+# Motial (formerly Remer): development notes
 
 **Read this first, then `Motial/README.md` and `Motial/Docs/Steady_Clinical_Evidence_and_Design_Report.pdf`.**
 Owner: Xuan (En Xuan), NUS Industrial Design, DID platform "Spatial Computing and AI". Presentation: **29 Oct 2026**, possibly to the Head of Apple. The target is Apple-quality polish.
@@ -80,7 +80,7 @@ Owner: Xuan (En Xuan), NUS Industrial Design, DID platform "Spatial Computing an
 ## 4b. Changes on 26 Oct 2026 (afternoon, second session)
 - **LLDB fix applied:** Edit Scheme → Run → Info → *Debug executable* is now **off**. The app runs; Xcode can't stop on crashes until it's switched back on.
 - **Play Smart card (Today):** five white sport buttons (invisible labels) → one segmented control (`PlaySport.shortTitle`, "Everyday"); card 270 → 340 pt so "Watch and learn" isn't cut off.
-- **Court scenes as live 3D (gap 3):** `Resources/Models/Court3D.usdz` (15 MB, both scenes on one 24 fps timeline: sprain 0–158, safe 170–290; `Clip180.frames`). `CourtGuideScene` plays it life-size on Sunset Court (real stereo, walk-around parallax) and drives x-ray/ligament glow in code; falls back to the 180° video if the file is missing. Built by `Tools/AssetPipeline/bake_court3d.py` (also in `ClaudePipeline/`), which reuses `vr180.py`. Ball/hoop colours are set in code (`paintProps`).
+- **Court scenes as live 3D (gap 3):** `Resources/Models/Court3D.usdz` (15 MB, both scenes on one 24 fps timeline: sprain 0–158, safe 170–290; `Clip180.frames`). `CourtGuideScene` plays it life-size on Sunset Court (real stereo, walk-around parallax) and drives x-ray/ligament glow in code; falls back to the 180° video if the file is missing. Built by `Tools/AssetPipeline/bake_court3d.py` (also in `AssetScripts/`), which reuses `vr180.py`. Ball/hoop colours are set in code (`paintProps`).
 - **First-time headset onboarding (gap 5):** Welcome tour now starts with "Look, then pinch" (a glowing practice orb; pinching it advances). STOP step teaches pause/exit and the tour STOP orb responds to a pinch. Room step teaches the Digital Crown. Settings → "Show the welcome again". 13 new Kokoro clips.
 - **Not yet confirmed on screen:** all of the above. The build was at step 39/52 with no errors when the Mac disconnected.
 - **Simulator note:** synthetic drags/swipes from computer use don't scroll windows or Home pages; clicks work. Ask the owner to scroll.
@@ -111,10 +111,10 @@ Owner feedback and what was done:
 6. Optionally update the pitch deck (`Extras/Steady_Pitch_Deck.pptx` is from before the rename).
 
 ## 6. How to add or regenerate assets
-- **Voice (required for any new spoken line):** `ClaudePipeline/render_voice_kokoro.py <lines.txt> <outdir>`. It needs `kokoro_onnx`, `kokoro-v1.0.onnx` and `voices-v1.0.bin` (from the kokoro-onnx GitHub releases), plus ffmpeg. Each sentence becomes `vo_<first 12 hex of sha1(normalised sentence)>.m4a`. Normalising means: lowercase, straight quotes, single spaces, trailing .!? removed. `SoundManager.voiceKey` uses the same rule. Drop the files into `Resources/Voice/`. In DEBUG builds, a missing clip prints `[Remer] voice clip missing: …`. The full corpus builder is `Tools/make_voice.py` / `ClaudePipeline/make_voice_corpus.py`.
-- **Sound effects:** `ClaudePipeline/make_sfx.py <outdir>` (numpy + soundfile; procedural, licence-free).
+- **Voice (required for any new spoken line):** `AssetScripts/render_voice_kokoro.py <lines.txt> <outdir>`. It needs `kokoro_onnx`, `kokoro-v1.0.onnx` and `voices-v1.0.bin` (from the kokoro-onnx GitHub releases), plus ffmpeg. Each sentence becomes `vo_<first 12 hex of sha1(normalised sentence)>.m4a`. Normalising means: lowercase, straight quotes, single spaces, trailing .!? removed. `SoundManager.voiceKey` uses the same rule. Drop the files into `Resources/Voice/`. In DEBUG builds, a missing clip prints `[Remer] voice clip missing: …`. The full corpus builder is `Tools/make_voice.py` / `AssetScripts/make_voice_corpus.py`.
+- **Sound effects:** `AssetScripts/make_sfx.py <outdir>` (numpy + soundfile; procedural, licence-free).
 - **180° Blender renders:** `pip install bpy==5.2.3`.
-  - Inputs: `CoachFitness.usdz`, `CoachScan.usdz`, `coach_*_clips.json` and `env_sunset_court.jpg` from Resources, in the same folder as the scripts (paths in the scripts point to /tmp/claude-0/vr; change them).
+  - Inputs: `CoachFitness.usdz`, `CoachScan.usdz`, `coach_*_clips.json` and `env_sunset_court.jpg` from Resources, in the same folder as the scripts (paths in the scripts point to a local build folder; change them).
   - Preview: `python3 vr180.py -- sprain preview`.
   - Background plate: `python3 vr180.py -- sprain render 1280 24 --bg`.
   - Frames: `runall.sh`, then `encode.sh`. About 20 s per frame on 2 CPU cores.
@@ -141,7 +141,7 @@ Owner feedback and what was done:
 
 ## 8. Folder contents of this zip
 - `Motial/`: the complete Xcode project (app, companion, Docs, Tools). **This is all you need to build.**
-- `ClaudePipeline/`: scripts used to make the voice, sound effects and 180° renders.
+- `AssetScripts/`: scripts used to make the voice, sound effects and 180° renders.
 - `Extras/`:
   - stereo SBS 180° clips
   - Remer_user_flow_VisionPro.png

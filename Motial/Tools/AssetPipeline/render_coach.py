@@ -1,4 +1,4 @@
-import sys; sys.path.insert(0, '/home/claude/build')
+import sys; sys.path.insert(0, 'build')
 from common import *
 bpy.ops.wm.open_mainfile(filepath=OUT + 'coach.blend')
 M = json.load(open(OUT + 'coach_clips.json'))

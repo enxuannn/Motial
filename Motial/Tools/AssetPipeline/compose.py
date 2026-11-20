@@ -1,6 +1,6 @@
 import numpy as np, math, sys
 from PIL import Image, ImageDraw, ImageFilter
-sys.path.insert(0,'/home/claude/work')
+sys.path.insert(0,'build')
 W,H=1920,1080; fov=64; f=0.5*W/math.tan(math.radians(fov)/2)
 CAM=np.array([0.5,1.6,4.2]); pitch=math.radians(0.5)
 def proj(p):

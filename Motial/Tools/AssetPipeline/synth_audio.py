@@ -3,7 +3,7 @@ import numpy as np, subprocess, os
 from scipy.signal import butter, lfilter
 from scipy.io import wavfile
 SR = 44100
-OUT = '/home/claude/build/out/audio/'; os.makedirs(OUT, exist_ok=True)
+OUT = 'build/out/audio/'; os.makedirs(OUT, exist_ok=True)
 rng = np.random.default_rng(1)
 
 def t(d): return np.arange(int(SR * d)) / SR

@@ -2,8 +2,8 @@
 import bpy, bmesh, os, json, math
 from mathutils import Vector, Matrix
 
-STL = '/tmp/claude-0/-home-claude/19360d7f-a02c-5400-a466-777c4ea0645e/scratchpad/dl/bp3d/assets/BodyParts3D_data/stl/'
-OUT = '/home/claude/build/out/'
+STL = 'data/BodyParts3D_data/stl/'
+OUT = 'build/out/'
 os.makedirs(OUT, exist_ok=True)
 
 

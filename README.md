@@ -62,6 +62,10 @@ Motial/
 media/                          pitch video and pictures
 ```
 
+## Tools used
+
+Xcode (SwiftUI, RealityKit, ARKit), Reality Composer Pro and Blender. AI coding assistants (Claude and OpenAI Codex) helped write code, asset scripts and voice clips. The concept, design, clinical decisions and Apple Vision Pro testing are my own.
+
 ## Clinical basis
 
 Martin RL et al., JOSPT 2021 (lateral ankle sprain CPG) · Vuurberg G et al., BJSM 2018 · Doherty C et al., BJSM 2017 and AJSM 2016 · Dubois & Esculier, PEACE & LOVE, BJSM 2020 · Hupperets MDW et al., BMJ 2009 · Smith MD et al., PAASS framework, BJSM 2021 · Gribble PA et al., J Athl Train 2014 · Fu L et al., 2017 · Stepper B et al., 2025 · Ulrich RS, Science 1984.

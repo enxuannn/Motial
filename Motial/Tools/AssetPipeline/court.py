@@ -7,7 +7,7 @@ World: person stands on the free-throw line at the origin, facing -Z toward the 
 import numpy as np
 from PIL import Image, ImageFilter
 import sys
-OUT = sys.argv[1] if len(sys.argv) > 1 else '/home/claude/work/out/'
+OUT = sys.argv[1] if len(sys.argv) > 1 else 'build/out/'
 import os; os.makedirs(OUT, exist_ok=True)
 EYE = 1.6
 CAM = [0.0, 0.0]   # eye x, z (panorama: origin)
